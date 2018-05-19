@@ -15,6 +15,14 @@ namespace Blockchain
     {
         public UnspentModelOutput UnpsentOutput;
 
+        // GET: api/<controller>
+        // No address is passed
+        [HttpGet]
+        public string Get()
+        {
+            return BitcoinConfiguration.Constants.NoAddressPassedError;
+        }
+
         /// <summary>
         /// GET api/address/{*address} 
         /// Get unspent output for a given bitcoin address
@@ -27,7 +35,14 @@ namespace Blockchain
             UnpsentOutput = new UnspentModelOutput();
 
             Trace.TraceInformation("Validating input address"); 
-            if (String.IsNullOrWhiteSpace(address) || !CommonHelper.ValidBitCoinAddress(address))
+
+            if (String.IsNullOrWhiteSpace(address))
+            {
+                UnpsentOutput.OutputString = BitcoinConfiguration.Constants.NoAddressPassedError;
+                return UnpsentOutput.OutputString;
+            }
+
+            if (!CommonHelper.ValidBitCoinAddress(address))
             {
                 UnpsentOutput.OutputString = BitcoinConfiguration.Constants.InvalidBitcoinAddrError;
                 return UnpsentOutput.OutputString;

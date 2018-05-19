@@ -7733,11 +7733,11 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "C:\\Users\\anrama\\source\\repos\\Blockchain\\BitcoinAddressApplication\\BitcoinAddressApplication.csproj",
+      "projectUniqueName": "D:\\Git\\bitcoin-address-api\\BitcoinAddressApplication\\BitcoinAddressApplication.csproj",
       "projectName": "BitcoinAddressApplication",
-      "projectPath": "C:\\Users\\anrama\\source\\repos\\Blockchain\\BitcoinAddressApplication\\BitcoinAddressApplication.csproj",
+      "projectPath": "D:\\Git\\bitcoin-address-api\\BitcoinAddressApplication\\BitcoinAddressApplication.csproj",
       "packagesPath": "C:\\Users\\anrama\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anrama\\source\\repos\\Blockchain\\BitcoinAddressApplication\\obj\\",
+      "outputPath": "D:\\Git\\bitcoin-address-api\\BitcoinAddressApplication\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
