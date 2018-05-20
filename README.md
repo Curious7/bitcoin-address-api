@@ -37,8 +37,15 @@ empty or null address
 ## Deployment
 
 For testing purposes, this code has been hosted in azure and can be tested using the following url
+
+```
+http://bitcoinapplication.azurewebsites.net/api/address/<address>
+```
+eg : 
 http://bitcoinapplication.azurewebsites.net/api/address/1A8JiWcwvpY7tAopUkSnGuEYHmzGYfZPiq
 
 Alternatively, the response can be fetched using the following curl command :
 
-$curl http://bitcoinapplication.azurewebsites.net/api/address/1AJbsFZ64EpEfS5UAjAfcUG8pH8Jn3rn1F
+```
+$curl http://bitcoinapplication.azurewebsites.net/api/address/<address>
+```
